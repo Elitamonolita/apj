@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Head from "./head/head";
+import List from "./list/list";
+import {Component} from "react";
+import Service from "./services/services";
+import Details from "./list/list-details/details";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default  class App extends  Component{
+    service = new Service()
+    render() {
+    return (
+    <div>
+        <div className="main-margin">
+      <Head/>
+         </div>
+        <List/>
+        <Details swapiService={this.service}/>
     </div>
   );
+    }
 }
 
-export default App;
+
