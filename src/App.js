@@ -13,7 +13,6 @@ export default  class App extends  Component{
         <div className="main-margin">
       <Head/>
          </div>
-        <List/>
         <Details swapiService={this.service}/>
     </div>
   );
