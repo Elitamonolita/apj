@@ -4,8 +4,12 @@
     text-align: center;
     line-height: normal;
     background-color: red;
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 300px;
     position: relative;
- margin: 20px 15px;
+ margin: 20px 1.5%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.color {
+    color: white;
 }

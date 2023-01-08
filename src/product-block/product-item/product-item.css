@@ -1,0 +1,12 @@
+.product-blocks {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: normal;
+    background-color: red;
+    width: 250px;
+    height: 350px;
+    position: relative;
+    margin: 20px 15px;
+    box-shadow: 0 0 10px black;
+}

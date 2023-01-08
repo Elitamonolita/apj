@@ -1,11 +1,65 @@
 .head-background {
-    background-color: #343a40;
+    background-color: #ece7e7;
     width: 100%;
-    height: 50px;
+    height: 80px;
+    vertical-align: top;
+    line-height: normal;
 }
 .head-background-2 {
     width: 100%;
     height: 3px;
     position: relative;
-    background-color: limegreen;
+    background-color: #a5a8a5;
+}
+.name {
+    /*text-decoration: unset;*/
+    position: absolute;
+    font-size: 50px;
+    margin-left: 40px;
+    font-family: Bradley Hand, cursive;
+    color: #505050;
+    vertical-align: top;
+    line-height: normal;
+}
+.menu-image {
+    background-repeat: no-repeat;
+    background-size: 20px;
+   width: 50px;
+    margin-left: 1%;
+    margin-top: 17px;
+}
+.name:hover {
+    color: rgba(54, 54, 54, 0.85);
+}
+.head-buttons {
+    margin-top: 15px;
+    font-size: 20px;
+margin-right: 30px;
+    display: inline-block;
+    text-decoration: unset;
+    color: #656565;
+}
+.head-buttons:hover {
+    color: #868686;
+}
+.head {
+    margin-right: 2%;
+    float: right;
+    padding: 14px 0;
+}
+
+@media screen and (max-width: 500px) {
+    .head-buttons {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .head {
+        margin-right: 2px;
+    }
+    .head-buttons {
+        margin-right: 10px;
+    }
+    .name {
+        margin-left: 15px;
+    }
 }

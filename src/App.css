@@ -1,3 +1,6 @@
-.main-margin {
-margin: 0 10%;
+body {
+    padding: 0 80px;
+}
+.product-background {
+    background-color: white;
 }

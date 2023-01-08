@@ -1,13 +1,15 @@
 .list {
-    margin-top: 50px;
-    background-color: #e7dddd;
-    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: -30px;
+    background-color: white;
+    width: auto;
     height: auto;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.135);
     border-top: 2px solid rgba(0, 0, 0, 0.135);
-    margin-bottom: 10px;
     vertical-align: top;
     text-align: center;
     line-height: normal;
+    top: -30px;
+
 }
 

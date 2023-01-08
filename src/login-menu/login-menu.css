@@ -1,0 +1,87 @@
+.main-registration {
+    width: 100%;
+    height: 500px;
+    background-color: #343a40;
+    vertical-align: top;
+    text-align: center;
+    line-height: normal;
+    margin-top: 20px;
+}
+.login {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 6px;
+    color: black;
+}
+.avtorization {
+    margin-top: 40px;
+    font-size: 50px;
+    color: black;
+}
+.explanation {
+    opacity: 0.6;
+    width: 22%;
+    margin: 0 auto;
+}
+.second-registration-block {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10px;
+    width: auto;
+    height: 100%;
+    color: black;
+    background-color: gainsboro;
+}
+.password {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    bottom: 10px;
+    background-color: white;
+    border-radius: 6px;
+    color: black;
+}
+.username {
+    margin-top: 30px;
+    margin-bottom: -2px;
+    opacity: 0.6;
+    float: left;
+}
+.placeholders-name {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.placeholders-password {
+    float: left;
+    position: relative;
+    bottom: -6px;
+    opacity: 0.6;
+}
+.line {
+    border-bottom: 1px solid black;
+}
+@media screen and (max-width: 1125px) {
+    .explanation {
+        width: 40%;
+    }
+}
+.login-button {
+    padding-top: 5px;
+    margin-top: 30px;
+    height: 25px;
+    border-radius: 2px;
+    background-color: rgba(0, 128, 0, 0.836);
+}
+@media screen and (max-width: 500px) {
+    .second-registration-block {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 10px;
+        width: auto;
+        height: 100%;
+        color: black;
+        background-color: gainsboro;
+    }
+}
