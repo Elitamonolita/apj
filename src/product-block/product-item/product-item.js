@@ -4,13 +4,14 @@ import "./product-item.css"
 import {Link} from "react-router-dom";
 
 const ProductItem = (props) => {
-    const {name, id} = props;
+    const {name, id, description, price} = props;
 
     return (
-        <div className="product-blocks">
-            {name}
-            <Link to={"/full/"+id}>Купить</Link>
-        </div>
+        <Link to={"/full/"+id} className="product-blocks">
+            <img className="product-image"></img>
+            <div className="items-name">{name}</div>
+            <div className="price" >Цена:{price}</div>
+        </Link>
     )
 }
 export default ProductItem

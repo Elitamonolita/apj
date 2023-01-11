@@ -5,12 +5,12 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Head from "./head/head";
 import GeneralMainDetails from "./general-details/general-main-details";
 import ShowFullProduct from "./show-full-product/show-full-product";
-import ShowFullDetails from "./show-full-product/show-full-details/show-full-details";
 import LoginMenu from "./login-menu/login-menu";
 import ShowFullDetailWrapper from "./show-full-product/show-full-details/show-full-detail-wrapper";
-import Reviews from "./reviews/reviews";
+import ReviewsDetails from "./reviews/reviews-details/reviews-details";
 
 export default  class App extends  Component{
+
     service = new Service()
     render() {
     return (
@@ -24,7 +24,7 @@ export default  class App extends  Component{
             </Route>
 
             <Route path="/reviews"
-                   element={<Reviews/>}>
+                   element={<ReviewsDetails  swapiService={this.service}/>}>
             </Route>
 
             <Route path="/full/" exact

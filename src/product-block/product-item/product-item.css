@@ -3,10 +3,25 @@
     vertical-align: top;
     text-align: center;
     line-height: normal;
-    background-color: red;
+    background-color: white;
     width: 250px;
-    height: 350px;
+    height: 360px;
     position: relative;
     margin: 20px 15px;
     box-shadow: 0 0 10px black;
+    border-radius: 5px;
+}
+.price {
+background-color: rgba(45, 45, 45, 0.35);
+}
+.product-image {
+    margin-top: 15px;
+    width: 80%;
+    height: 250px;
+}
+.items-name {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.19);
 }

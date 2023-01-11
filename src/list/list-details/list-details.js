@@ -8,8 +8,8 @@ export default class ListDetails extends Component {
         data: []
     }
     componentDidMount() {
-        const {swapiService} = this.props;
-        swapiService.getProduct().then((data) => {
+          const {swapiService} = this.props;
+       swapiService.getProduct().then((data) => {
             this.setState({
                 data
             });
@@ -17,6 +17,15 @@ export default class ListDetails extends Component {
     }
 
     render() {
+        const getResource = async (url) => {
+            const res = await  fetch(url);
+            const body = await res.json();
+            return body
+        }
+        getResource('https://swapi.dev/api/people/1/')
+            .then((body) => {
+                console.log(body)
+            })
         const {data} = this.state;
         const content = data ? <List productData={data}></List> : null;
         return (

@@ -9,7 +9,7 @@ const ShowFullProduct = (props) => {
 
     return (
         <div className="ShowFullProduct-background">
-            <div className="product-image"></div>
+            <div className="product-image-full"></div>
             <div className="product-full-info">
                 <h1 className="text">{name}</h1>
             </div>

@@ -8,7 +8,6 @@ export default class ShowFullDetails extends Component {
 
     componentDidMount() {
         const {swapiService, id} = this.props;
-
         swapiService.getInfoById(id).then((data) => {
             this.setState({
                 data

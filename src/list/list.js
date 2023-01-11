@@ -1,12 +1,12 @@
 import React from "react";
 import "./list.css"
-import BlockList from "./block-list/block-list";
+import BlockItems from "./block-items/block-items";
 
 const List = (props) => {
     const {productData} = props;
     const elements = productData.map((item) => {
         return (
-        <BlockList {...item}/>
+        <BlockItems {...item}/>
         )
     })
     return (

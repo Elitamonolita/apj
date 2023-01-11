@@ -1,31 +1,53 @@
 .reviews-background {
     background-color: #cecbcb;
-    height: auto;
+    height: 700px;
     width: 100%;
+    min-height: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .reviews-background2 {
-    margin: 0 10%;
+    margin: 0 auto;
     width: 80%;
-    height: 500px;
+    height: 600px;
     background-color: white;
+    min-height: 665px;
+    padding: 10px 10px;
 }
 .add-block {
     width: 70%;
+    height: 35px;
+    color: black;
+    background-color: white;
+    border: solid 1px;
+    margin-right: 2%;
+    border-radius: 5px;
 }
 .add-button {
-width: 50px;
-    height: 25px;
-    background-color: black;
+    margin-top: -3px;
+width: 40px;
+    height: 40px;
+    background-image: url("../images/enter.png");
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    background-size: cover;
+    vertical-align: top;
+    text-align: center;
+    line-height: normal;
+    color: black;
+
+}
+.reviews-input-block {
+    padding-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
     vertical-align: top;
     text-align: center;
     line-height: normal;
 }
-.reviews-input-block {
-    padding-top: 12px;
+.reviews-items {
+    overflow: auto;
     width: 100%;
-    height: 50px;
-    border-bottom: 1px solid black;
-    vertical-align: top;
-    text-align: center;
-    line-height: normal;
+    height: 580px;
 }
