@@ -47,7 +47,9 @@ width: 40px;
     line-height: normal;
 }
 .reviews-items {
+    margin-top: 5px;
     overflow: auto;
     width: 100%;
     height: 580px;
+
 }

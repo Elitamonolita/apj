@@ -8,6 +8,7 @@ import ShowFullProduct from "./show-full-product/show-full-product";
 import LoginMenu from "./login-menu/login-menu";
 import ShowFullDetailWrapper from "./show-full-product/show-full-details/show-full-detail-wrapper";
 import ReviewsDetails from "./reviews/reviews-details/reviews-details";
+import MainPageAdmin from "./admin-panel/main-page-admin/main-page-admin";
 
 export default  class App extends  Component{
 
@@ -22,6 +23,9 @@ export default  class App extends  Component{
             <Route path="/"
                    element={<GeneralMainDetails swapiService={this.service}/>}>
             </Route>
+            <Route path="/test"
+                   element={<MainPageAdmin/>}>
+            </Route>
 
             <Route path="/reviews"
                    element={<ReviewsDetails  swapiService={this.service}/>}>
@@ -33,10 +37,6 @@ export default  class App extends  Component{
 
             <Route path="/full/:id"
                    element={<ShowFullDetailWrapper swapiService={this.service}/>}>
-            </Route>
-
-            <Route path="/login"
-                   element={<LoginMenu/>}>
             </Route>
 
         </Routes>

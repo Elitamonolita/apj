@@ -1,0 +1,30 @@
+.body-admin {
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.head-admin {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px rgba(0, 0, 0, 0.44) solid;
+}
+.examples {
+    width: 25%;
+    height: auto;
+}
+.examples-block {
+    margin-top: 20px;
+    vertical-align: top;
+    text-align: center;
+    line-height: normal;
+    display: flex;
+}
+.examples-img {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

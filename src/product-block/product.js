@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "./product.css"
 import ProductItem from "./product-item/product-item";
+import {Pagination} from "@mui/lab";
 
 
 export default class Product extends Component {
@@ -9,11 +10,14 @@ export default class Product extends Component {
         show2: false,
         show3: false,
         filterMenu: true,
-        filterType: ""
+        filterType: "",
+        page: 1
     };
+
     filterProduct = (product, filterType) => {
         return product.filter( (item) => item.type == filterType);
     };
+
     filterMenu = () => {
         this.setState(({filterMenu}) => {
             return {
@@ -42,13 +46,21 @@ export default class Product extends Component {
         this.setState({filterType})
     }
     render() {
+        const handleChange = (event, value) => {
+            this.setState({
+                page: value,
+            })
+        };
         const {products} = this.props;
+
+var productsSlice = products.slice( (this.state.page-1)*30, 30*this.state.page)
+
         var filterProducts;
         if (this.state.filterType) {
-            filterProducts =  this.filterProduct(products, this.state.filterType)
+            filterProducts =  this.filterProduct(productsSlice, this.state.filterType)
         }
         else {
-            filterProducts = products
+            filterProducts = productsSlice
         }
         const element2 = filterProducts.map((item) => {
             return (
@@ -99,6 +111,13 @@ export default class Product extends Component {
                 <div className="product-items">
                     {element2}
                 </div>
+                <div className="pagination-block">
+                    <Pagination
+                        className="pagination-noBootstrap"
+                        count={Math.ceil(products.length/30)}
+                        color="primary"
+                        onChange={handleChange}/>
+            </div>
             </div>
         )
     }

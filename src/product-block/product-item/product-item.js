@@ -9,8 +9,11 @@ const ProductItem = (props) => {
     return (
         <Link to={"/full/"+id} className="product-blocks">
             <img className="product-image"></img>
-            <div className="items-name">{name}</div>
-            <div className="price" >Цена:{price}</div>
+            <div className="items-description">
+                <div className="name-item">{name}</div>
+                <div className="description-item">{description}</div>
+            </div>
+            <div className="price" >Цена: {price}</div>
         </Link>
     )
 }

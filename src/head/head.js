@@ -11,9 +11,8 @@ export default class Head extends Component {
                 <div className="head-background">
                     <Link to="/" className="name">Name</Link>
                     <div className="head">
-                        <Link to="/" className="head-buttons">Главная</Link>
                         <Link to="/reviews" type="button" className="button-reviews head-buttons">Отзывы</Link>
-                        <Link to="/login" type="button" className="head-buttons">Log in</Link>
+                        <Link to="/test" type="button" className="button-reviews head-buttons">Test</Link>
                     </div>
                 </div>
                 <div className="head-background-2"></div>

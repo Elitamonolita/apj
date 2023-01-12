@@ -4,24 +4,37 @@
     text-align: center;
     line-height: normal;
     background-color: white;
-    width: 250px;
-    height: 360px;
+    width: 270px;
+    height: 370px;
     position: relative;
     margin: 20px 15px;
     box-shadow: 0 0 10px black;
     border-radius: 5px;
+    text-decoration: none;
 }
+
 .price {
-background-color: rgba(45, 45, 45, 0.35);
+    color: #268526;
+    border-top: solid 1px rgba(0, 0, 0, 0.29);
+    padding-top: 2px;
 }
 .product-image {
     margin-top: 15px;
     width: 80%;
     height: 250px;
 }
-.items-name {
-    margin-top: 5px;
-    width: 100%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.19);
+.items-description {
+    height: 22%;
+    color: black;
+}
+.name-item {
+    height: 32%;
+    margin-bottom: 1px;
+    font-family: Marker Felt, serif;
+    font-size: 20px;
+}
+.description-item {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0 10px;
 }

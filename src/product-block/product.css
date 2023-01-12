@@ -5,7 +5,6 @@
     text-align: center;
     line-height: normal;
 }
-
 .box-3 {
     background-color: rgba(185, 182, 182, 0.81);
     min-width: 100%;
@@ -24,6 +23,8 @@
 }
 .product {
     background-color: white;
+    width: 100%;
+    height: auto;
 }
 .filter {
     position: relative;
@@ -93,7 +94,7 @@
     padding-bottom: 15px;
 }
 .filter-blocks {
-    padding-top: 10px;
+    padding-top: 7px;
     overflow: auto;
     box-shadow: 0 0 10px black;
     display: inline-block;
@@ -104,6 +105,9 @@
     text-decoration: none;
     color: black;
     font-family: cursive;
+}
+.filter-blocks:hover {
+    color: rgba(0, 0, 0, 0.7);
 }
 @media screen and (max-width: 1106px) {
     .filter-blocks {
@@ -127,9 +131,14 @@
     background-color: rgba(45, 45, 45, 0.51);
 }
 .filter-block-all {
-    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    padding-top: 52px;
     font-size: 50px;
     color: black;
+}
+.filter-block-all:hover {
+    color: rgba(0, 0, 0, 0.7);
 }
 .filter-images {
     width: 110px;
@@ -138,3 +147,14 @@
     margin-right: auto;
     margin-top: 5px;
 }
+
+.pagination-block {
+    height: 100px;
+    width: 240px;
+    margin: 0 auto;
+}
+ .pagination-noBootstrap {
+     padding-top: 30px;
+     margin-left: 8px;
+     margin-bottom: 200px;
+ }
