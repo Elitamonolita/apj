@@ -7,7 +7,7 @@ export default  class ReviewsItems extends  Component {
         const {reviews} = this.props;
     return (
         <div className="reviews-blocks">
-            <div className="person-name">Имя пользователя</div>
+            <div className="person-name">Гость</div>
             {reviews}
         </div>
     ) }

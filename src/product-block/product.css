@@ -149,12 +149,15 @@
 }
 
 .pagination-block {
-    height: 100px;
-    width: 240px;
-    margin: 0 auto;
+  width: auto;
+    height: auto;
+    margin-left: 160px;
 }
  .pagination-noBootstrap {
+     width: 400px;
      padding-top: 30px;
-     margin-left: 8px;
-     margin-bottom: 200px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 20px;
+     padding-bottom: 40px;
  }

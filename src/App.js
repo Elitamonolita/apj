@@ -9,9 +9,10 @@ import LoginMenu from "./login-menu/login-menu";
 import ShowFullDetailWrapper from "./show-full-product/show-full-details/show-full-detail-wrapper";
 import ReviewsDetails from "./reviews/reviews-details/reviews-details";
 import MainPageAdmin from "./admin-panel/main-page-admin/main-page-admin";
+import ServicesDetails from "./services/services-details";
 
 export default  class App extends  Component{
-
+    ServicesDetails = new Service()
     service = new Service()
     render() {
     return (
@@ -21,7 +22,7 @@ export default  class App extends  Component{
         <Routes>
 
             <Route path="/"
-                   element={<GeneralMainDetails swapiService={this.service}/>}>
+                   element={<GeneralMainDetails swapiService={this.ServicesDetails}/>}>
             </Route>
             <Route path="/test"
                    element={<MainPageAdmin/>}>

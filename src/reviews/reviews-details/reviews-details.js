@@ -5,7 +5,7 @@ export default class ReviewsDetails extends Component {
     id=1
     state = {
         data: [],
-        reviews: []
+        reviews: [{reviews:"Отзывы должны сохраняться на сервере, но у нас только эмуляция сохранение отзыва после обновление страницы невозможно."} ]
     }
     addItem = (text) => {
 
