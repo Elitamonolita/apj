@@ -3,12 +3,13 @@ import "../../services/services"
 import "./product-item.css"
 import {Link} from "react-router-dom";
 
+
 const ProductItem = (props) => {
-    const {name, id, description, price} = props;
+    const {name, id, description, price, pictures} = props;
 
     return (
         <Link to={"/full/"+id} className="product-blocks">
-            <img className="product-image"></img>
+            <img src={pictures} className="product-image"></img>
             <div className="items-description">
                 <div className="name-item">{name}</div>
                 <div className="description-item">{description}</div>

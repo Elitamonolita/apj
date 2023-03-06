@@ -4,7 +4,6 @@ import ProductItem from "./product-item/product-item";
 import {Pagination} from "@mui/lab";
 
 
-
 export default class Product extends Component {
     state = {
         show1: false,
